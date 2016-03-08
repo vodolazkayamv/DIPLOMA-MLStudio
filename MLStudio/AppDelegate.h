@@ -10,6 +10,10 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property NSArray *nameArray;
+@property NSArray *classifiers;
+@property NSMutableArray *useAlgorithm;
+@property NSArray *JAVAClass;
 
 @end
 

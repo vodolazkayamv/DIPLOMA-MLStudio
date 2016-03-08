@@ -16,6 +16,10 @@
 		AE93EE891C6F628D00EC7245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE93EE871C6F628D00EC7245 /* Main.storyboard */; };
 		AE93EE941C6F628D00EC7245 /* MLStudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EE931C6F628D00EC7245 /* MLStudioTests.m */; };
 		AE93EE9F1C6F628D00EC7245 /* MLStudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EE9E1C6F628D00EC7245 /* MLStudioUITests.m */; };
+		AE93EEAE1C6F643600EC7245 /* InputDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEAD1C6F643600EC7245 /* InputDataViewController.m */; };
+		AE93EEB21C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEB01C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m */; };
+		AE93EEB91C72059D00EC7245 /* GenerateJAVAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEB81C72059D00EC7245 /* GenerateJAVAViewController.m */; };
+		AE93EEBB1C72087000EC7245 /* Generated.Java in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEBA1C72087000EC7245 /* Generated.Java */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,13 @@
 		AE93EE9A1C6F628D00EC7245 /* MLStudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93EE9E1C6F628D00EC7245 /* MLStudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLStudioUITests.m; sourceTree = "<group>"; };
 		AE93EEA01C6F628D00EC7245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE93EEAC1C6F643600EC7245 /* InputDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputDataViewController.h; sourceTree = "<group>"; };
+		AE93EEAD1C6F643600EC7245 /* InputDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputDataViewController.m; sourceTree = "<group>"; };
+		AE93EEAF1C6F7E5400EC7245 /* ChooseAlgorithmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseAlgorithmsViewController.h; sourceTree = "<group>"; };
+		AE93EEB01C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseAlgorithmsViewController.m; sourceTree = "<group>"; };
+		AE93EEB71C72059D00EC7245 /* GenerateJAVAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateJAVAViewController.h; sourceTree = "<group>"; };
+		AE93EEB81C72059D00EC7245 /* GenerateJAVAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateJAVAViewController.m; sourceTree = "<group>"; };
+		AE93EEBA1C72087000EC7245 /* Generated.Java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Generated.Java; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,13 @@
 				AE93EE801C6F628D00EC7245 /* Document.m */,
 				AE93EE851C6F628D00EC7245 /* Assets.xcassets */,
 				AE93EE871C6F628D00EC7245 /* Main.storyboard */,
+				AE93EEAF1C6F7E5400EC7245 /* ChooseAlgorithmsViewController.h */,
+				AE93EEB01C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m */,
+				AE93EEB71C72059D00EC7245 /* GenerateJAVAViewController.h */,
+				AE93EEB81C72059D00EC7245 /* GenerateJAVAViewController.m */,
+				AE93EEBA1C72087000EC7245 /* Generated.Java */,
+				AE93EEAC1C6F643600EC7245 /* InputDataViewController.h */,
+				AE93EEAD1C6F643600EC7245 /* InputDataViewController.m */,
 				AE93EE8A1C6F628D00EC7245 /* Info.plist */,
 				AE93EE821C6F628D00EC7245 /* Document.xcdatamodeld */,
 				AE93EE791C6F628D00EC7245 /* Supporting Files */,
@@ -276,9 +294,13 @@
 			files = (
 				AE93EE811C6F628D00EC7245 /* Document.m in Sources */,
 				AE93EE7E1C6F628D00EC7245 /* ViewController.m in Sources */,
+				AE93EEB21C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m in Sources */,
+				AE93EEB91C72059D00EC7245 /* GenerateJAVAViewController.m in Sources */,
 				AE93EE7B1C6F628D00EC7245 /* main.m in Sources */,
 				AE93EE841C6F628D00EC7245 /* Document.xcdatamodeld in Sources */,
+				AE93EEBB1C72087000EC7245 /* Generated.Java in Sources */,
 				AE93EE781C6F628D00EC7245 /* AppDelegate.m in Sources */,
+				AE93EEAE1C6F643600EC7245 /* InputDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
