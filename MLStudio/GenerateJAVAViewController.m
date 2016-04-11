@@ -12,7 +12,7 @@
 @interface GenerateJAVAViewController ()
 {
     AppDelegate *appDelegate;
-    
+    NSMutableString *consoleExample;
 }
 @end
 
@@ -38,7 +38,7 @@
         
         [importHeaderPart appendString:@"// selected algorithms to train:\n"];
         
-        NSMutableString *consoleExample = [NSMutableString stringWithFormat:@"java Generated %@ -x 10 -s 1 ", appDelegate.inputFileName];
+        consoleExample = [NSMutableString stringWithFormat:@"java Generated %@ -x 10 -s 1 ", appDelegate.inputFileName];
         
         for (int i = 0; i < appDelegate.useAlgorithm.count; i++)
         {
@@ -46,6 +46,7 @@
             if ([appDelegate.useAlgorithm[i] boolValue]) {
                 
                 [importHeaderPart appendFormat:@"import %@; \n", appDelegate.JAVAClass[i]];
+                
                 [consoleExample appendString:[NSString stringWithFormat:@"-W%d \"%@\" ",i, appDelegate.JAVAClass[i]]];
 
             }
@@ -98,7 +99,52 @@
         [importHeaderPart writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
     }
     
-
+    {
+        int pid = [[NSProcessInfo processInfo] processIdentifier];
+        NSPipe *pipe = [NSPipe pipe];
+        NSFileHandle *file = pipe.fileHandleForReading;
+    
+        NSTask *task = [[NSTask alloc] init];
+        [task setLaunchPath:@"/bin/sh"];
+        task.arguments = @[@"-c", @"cd /Users/mv/Documents/DIPLOMA/MLStudio/MLStudio ; javac Generated.java"];
+        
+        [task setStandardOutput:pipe];
+        [task setStandardError:pipe];
+        
+        [task launch];
+    
+        NSData *data = [file readDataToEndOfFile];
+        [file closeFile];
+    
+        NSString *grepOutput = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+        NSLog (@"Terminal returned:\n%@", grepOutput);
+    }
+    
+    {
+        int pid = [[NSProcessInfo processInfo] processIdentifier];
+        NSPipe *pipe = [NSPipe pipe];
+        NSFileHandle *file = pipe.fileHandleForReading;
+        
+        NSTask *task = [[NSTask alloc] init];
+        [task setLaunchPath:@"/bin/sh"];
+        
+        
+        NSMutableString *consoleTask = [NSMutableString stringWithFormat:@"cd /Users/mv/Documents/DIPLOMA/MLStudio/MLStudio ; %@", consoleExample];
+        
+        task.arguments = @[@"-c", consoleTask];
+        
+        //task.arguments = arguments;
+        [task setStandardOutput:pipe];
+        [task setStandardError:pipe];
+        
+        [task launch];
+        
+        NSData *data = [file readDataToEndOfFile];
+        [file closeFile];
+        
+        NSString *grepOutput = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+        NSLog (@"Terminal returned:\n%@", grepOutput);
+    }
    
 }
 

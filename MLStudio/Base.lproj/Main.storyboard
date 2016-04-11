@@ -668,10 +668,10 @@
         <!--Tab View Controller-->
         <scene sceneID="nln-7J-Xpa">
             <objects>
-                <tabViewController id="Ccu-Su-Kcx" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="Ccu-Su-Kcx" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="Входные данные" identifier="" id="TBx-W3-3Ma"/>
                         <tabViewItem label="Классификация" identifier="" id="VVk-dL-dLv"/>
+                        <tabViewItem label="Входные данные" identifier="" id="TBx-W3-3Ma"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="udy-VR-pQ9">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -680,8 +680,8 @@
                         <tabViewItems/>
                     </tabView>
                     <connections>
-                        <segue destination="zw0-cF-TSr" kind="relationship" relationship="tabItems" id="rsh-d4-0mb"/>
                         <segue destination="UIt-fL-gpa" kind="relationship" relationship="tabItems" id="V5E-KC-MGK"/>
+                        <segue destination="zw0-cF-TSr" kind="relationship" relationship="tabItems" id="rsh-d4-0mb"/>
                     </connections>
                 </tabViewController>
                 <customObject id="s6q-Dh-ROp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -897,13 +897,13 @@
             <objects>
                 <viewController id="blA-yP-ngE" customClass="GenerateJAVAViewController" sceneMemberID="viewController">
                     <view key="view" id="RzH-4o-4rm">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="634" height="409"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
                 <customObject id="QeH-Dm-P4Z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="1581"/>
+            <point key="canvasLocation" x="1285" y="1635.5"/>
         </scene>
     </scenes>
 </document>
