@@ -22,7 +22,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
-    _nameArray = @[
+    self.nameArray = @[
                   @"NaiveBayes",
                   @"AdaBoostM1",
                   @"ConjunctiveRule",
@@ -35,7 +35,7 @@
                   @"RandomTree"
                   ];
     
-    _classifiers = @[
+    self.classifiers = @[
                     @"Naive Bayes",
                     @"AdaBoost M1",
                     @"Conjunctive Rule",
@@ -48,13 +48,13 @@
                     @"Random Tree"
                     ];
     
-    _useAlgorithm = [[NSMutableArray alloc] initWithCapacity:10];
+    self.useAlgorithm = [[NSMutableArray alloc] initWithCapacity:10];
     for (int i = 0; i < _classifiers.count; i++)
     {
         [_useAlgorithm addObject: [NSNumber numberWithBool:NO]];
     }
     
-    _JAVAClass = @[
+    self.JAVAClass = @[
                    @"weka.classifiers.bayes.NaiveBayes",
                    @"weka.classifiers.meta.AdaBoostM1",
                    @"weka.classifiers.rules.ConjunctiveRule",

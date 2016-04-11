@@ -61,6 +61,7 @@
     // show input preview:
     
     NSString *filePath = fileUrl.path;
+    NSLog(@"chooseFileButtonTapped: filepath = %@", filePath);
     NSFileManager *fm = [NSFileManager defaultManager];
     
     NSString *previewText = @"No Input File to Preview";
@@ -68,6 +69,7 @@
     
     if ([fm fileExistsAtPath:filePath])
     {
+        appDelegate.inputFileName = filePath;
         previewText = [NSString stringWithContentsOfURL:fileUrl encoding:NSStringEncodingConversionAllowLossy error:nil];
     }
     

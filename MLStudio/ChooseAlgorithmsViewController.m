@@ -40,8 +40,6 @@
     // Get a new ViewCell
     NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     
-    // Since this is a single-column table view, this would not be necessary.
-    // But it's a good practice to do it in order by remember it when a table is multicolumn.
     if( [tableColumn.identifier isEqualToString:@"algorithmCell"] )
     {
         NSString *alg = [appDelegate.classifiers objectAtIndex:row];

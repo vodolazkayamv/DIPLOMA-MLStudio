@@ -46,13 +46,13 @@ public class testj48 {
         tmpOptions     = Utils.splitOptions(Utils.getOption("W", args));
         classname      = tmpOptions[0];
         //classname = "J48";
-        System.out.println(classname);
+        //System.out.println(classname);
         tmpOptions[0]  = "";
-        for (int i = 0; i < tmpOptions.length; i++)
-        {   System.out.println(tmpOptions[i]);}
+        //for (int i = 0; i < tmpOptions.length; i++)
+        //{   System.out.println(tmpOptions[i]);}
         Classifier cls = (Classifier) Utils.forName(Classifier.class, classname, tmpOptions);
 
-        System.out.println();
+        //System.out.println();
 
         // output evaluation
         System.out.println();

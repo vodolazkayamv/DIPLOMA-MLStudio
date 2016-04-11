@@ -10,10 +10,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property NSArray *nameArray;
-@property NSArray *classifiers;
-@property NSMutableArray *useAlgorithm;
-@property NSArray *JAVAClass;
+@property (strong, retain) NSArray *nameArray;
+@property (strong, retain) NSArray *classifiers;
+@property (strong, retain) NSMutableArray *useAlgorithm;
+@property (strong, retain) NSArray *JAVAClass;
+@property (retain) NSString* inputFileName;
 
 @end
 

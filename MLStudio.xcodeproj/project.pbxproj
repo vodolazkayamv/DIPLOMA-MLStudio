@@ -20,6 +20,7 @@
 		AE93EEB21C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEB01C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m */; };
 		AE93EEB91C72059D00EC7245 /* GenerateJAVAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEB81C72059D00EC7245 /* GenerateJAVAViewController.m */; };
 		AE93EEBB1C72087000EC7245 /* Generated.Java in Sources */ = {isa = PBXBuildFile; fileRef = AE93EEBA1C72087000EC7245 /* Generated.Java */; };
+		AEB871B01CB9191D00DDAFE2 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB871AE1CB9191D00DDAFE2 /* Algorithm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		AE93EEB71C72059D00EC7245 /* GenerateJAVAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateJAVAViewController.h; sourceTree = "<group>"; };
 		AE93EEB81C72059D00EC7245 /* GenerateJAVAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateJAVAViewController.m; sourceTree = "<group>"; };
 		AE93EEBA1C72087000EC7245 /* Generated.Java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Generated.Java; sourceTree = "<group>"; };
+		AEB871AD1CB9191D00DDAFE2 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		AEB871AE1CB9191D00DDAFE2 /* Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 			children = (
 				AE93EE761C6F628D00EC7245 /* AppDelegate.h */,
 				AE93EE771C6F628D00EC7245 /* AppDelegate.m */,
+				AEB871B11CB9192B00DDAFE2 /* Data Model */,
 				AE93EE7C1C6F628D00EC7245 /* ViewController.h */,
 				AE93EE7D1C6F628D00EC7245 /* ViewController.m */,
 				AE93EE7F1C6F628D00EC7245 /* Document.h */,
@@ -161,6 +165,15 @@
 				AE93EEA01C6F628D00EC7245 /* Info.plist */,
 			);
 			path = MLStudioUITests;
+			sourceTree = "<group>";
+		};
+		AEB871B11CB9192B00DDAFE2 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEB871AD1CB9191D00DDAFE2 /* Algorithm.h */,
+				AEB871AE1CB9191D00DDAFE2 /* Algorithm.m */,
+			);
+			name = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE93EE811C6F628D00EC7245 /* Document.m in Sources */,
+				AEB871B01CB9191D00DDAFE2 /* Algorithm.m in Sources */,
 				AE93EE7E1C6F628D00EC7245 /* ViewController.m in Sources */,
 				AE93EEB21C6F7E5400EC7245 /* ChooseAlgorithmsViewController.m in Sources */,
 				AE93EEB91C72059D00EC7245 /* GenerateJAVAViewController.m in Sources */,
@@ -521,6 +535,7 @@
 				AE93EEA51C6F628D00EC7245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE93EEA61C6F628D00EC7245 /* Build configuration list for PBXNativeTarget "MLStudioTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +544,7 @@
 				AE93EEA81C6F628D00EC7245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE93EEA91C6F628D00EC7245 /* Build configuration list for PBXNativeTarget "MLStudioUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +553,7 @@
 				AE93EEAB1C6F628D00EC7245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
